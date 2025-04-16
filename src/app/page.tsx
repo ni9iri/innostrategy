@@ -9,7 +9,7 @@ import NewsletterSection from '@/components/sections/NewsletterSection';
 export default function Home() {
   return (
     <MainLayout>
-      <div className="relative isolate">
+      <div className="relative isolate bg-gray-900">
         {/* Background gradient */}
         <div
           className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
@@ -32,22 +32,22 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             className="mx-auto max-w-2xl text-center"
           >
-            <h1 className="font-montserrat text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="font-montserrat text-4xl font-extrabold tracking-tight text-white sm:text-6xl">
               Your Partner in Growth
             </h1>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
+            <p className="mt-6 text-lg font-semibold leading-8 text-gray-200">
               Empowering businesses and individuals with expert digital strategies, financial mastery, and personalized mentoring.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               <Link
                 href="/contact"
-                className="rounded-md bg-gray-900 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-600"
+                className="rounded-md bg-white px-3.5 py-2.5 text-sm font-bold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
               >
                 Get Started Today
               </Link>
               <Link
                 href="/services"
-                className="text-sm font-semibold leading-6 text-gray-900"
+                className="text-sm font-bold leading-6 text-white hover:text-gray-200"
               >
                 Learn More <span aria-hidden="true">→</span>
               </Link>
